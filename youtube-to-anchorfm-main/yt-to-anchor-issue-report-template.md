@@ -3,7 +3,7 @@
 
 
 Table of contents
-=================
+=============================================================
 
 - [Introduction](#introduction)
 - [How I approached it?](#how-i-approached-it)
@@ -38,7 +38,7 @@ Table of contents
 - Tried setting it up locally but failed. The error was a timeout which I couldn't figure out due to limited knowledge of the codebase of the action.
 - After that analyzed some already existing actions and how they work. Asked chatGPT about what are the components of a GitHub action. The full chat can be found [here](https://chat.openai.com/share/ff59536b-47da-4a8a-9f17-c876c84f0f0c) if someone is interested in checking it out.
 - After getting some hints, I thought about trying different approaches.
-- Identified the unnecessary files by analyzing the existing actions and their different dependencies. 
+- Identified the unnecessary files by analyzing the existing actions and their different dependencies.
 Deleted them to reduce storage issue and only keep required files.
 - Then added the 'deleted and optimized folder' to the `.github/workflows/` folder.
 - Gave multiple attempts to create `.yml` file and got it after sometime.
@@ -110,11 +110,11 @@ If you want to test this, you can follow these steps:
 - Change the branch to your local branch if it is not already on it.
 - Change the [episode.json file](https://github.com/AnimeshKumar923/asyncapi-community/blob/youtube-to-anchor-workflow/episode.json) with your desired video ID. [How to find Youtube ID?](#how-to-find-youtube-id)
 - Commit your changes to the `your-local-branch` branch.
-- You can simply do it from the GitHub UI itself. 
+- You can simply do it from the GitHub UI itself.
   - If you're doing it locally within terminal, make sure to push it on the `your-local-branch` by executing `git push origin your-local-branch`.
 - Raise a PR to merge your code/video ID from `your-local-branch` to `youtube-to-anchor-workflow` branch.
 - After successful merging the branch, the action will be executed. It may take some time because it build the environment, so please have patience.
-- After that you can go to [this Podcast link](https://podcasters.spotify.com/pod/show/animeshkumar923) or [this Spotify link](https://open.spotify.com/show/1o6QPcllwCl5J67R9BjHkF) to check the upload. 
+- After that you can go to [this Podcast link](https://podcasters.spotify.com/pod/show/animeshkumar923) or [this Spotify link](https://open.spotify.com/show/1o6QPcllwCl5J67R9BjHkF) to check the upload.
   - It may have the title `Untitled`. The last file I checked and uploaded was `demo audio #5` Check commits for more details.
 
 ## NOTE ON VIDEO IDs
@@ -162,7 +162,7 @@ jobs:
           URL_IN_DESCRIPTION: true
           # POSTPROCESSOR_ARGS: 'ffmpeg:-ac 1'
           # SAVE_AS_DRAFT: true
-``` 
+```
 ---
 
 ```yml
@@ -179,6 +179,6 @@ jobs:
 
 # Ending notes
 
-- This note is 100% organic &copy &reg &trade @AnimeshKumar923 
+- This note is 100% organic &copy &reg &trade @AnimeshKumar923
 (i.e., I've written all these documentations line-by-line with careful and thorough consideration, and thinking. It's my first time writing such long documentation so there may be things which I'm lacking hence, your feedback is very much required and appreciated.)
-- Now make me a CI/CD engineer already. :stuck_out_tongue_winking_eye: 
+- Now make me a CI/CD engineer already. :stuck_out_tongue_winking_eye:
