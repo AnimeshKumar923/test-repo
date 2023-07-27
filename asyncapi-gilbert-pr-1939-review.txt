@@ -1,0 +1,7 @@
+- `Here, its title, version, description and license is defined.` it should be changed to `Here, it's title, version, description and license is defined.`
+
+- `Streetlights will send information about their environmental lighting to the broker.` can be changed to `information about their environmental lighting conditions to the broker.`
+
+- You can also make some changes by taking referneces from this issue #1945 once I get an approval from mainainer as to which changes to keep and which to discard. 
+
+- 

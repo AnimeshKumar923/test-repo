@@ -1,0 +1,49 @@
+==============================================================
+                                                             |
+[📑 Docs]: suggestions on 'create-asyncapi-document.md' file |
+                                                             |
+==============================================================
+
+
+I have some questions and suggestions to discuss that may improve [this doc](https://www.asyncapi.com/docs/tutorials/create-asyncapi-document):
+
+- Can [this line](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L17) be changed at the end from `environmental lighting` to `environmental lighting conditions` as the same is given [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L69)?
+- Can the `Event-driven architecture (EDA)` [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L28) put in bold letters?
+- Removing one extra full stop (.) from the end of [this line](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L40)
+- The `d` in the Id [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L79) can capitalized.
+- `Let's break it down into pieces:` can be changed to `Let's break the above code snippet down into pieces:` [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L90)
+- `lets` can be changed to `let's` [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L119)
+- Also on the [same line as above](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L119), `This section is used to describe the event names your API will be publishing and/or subscribing to.`, we can change it to `This section is used to describe the event names that your API will be publishing and/or subscribing to.
+- `Next is the payload property which is used to understand how the event should look like when publishing to that channel:` it can be changed to `Next is the payload property. It is used to understand how the event should look like when publishing to that channel` [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/create-asyncapi-document.md?plain=1#L131)
+
+
+
+============================================================
+							   |
+[📑 Docs]: suggestions on 'event-driven-architecture' file |
+							   |
+============================================================
+
+I have some questions and suggestions to discuss that may improve [this doc](https://www.asyncapi.com/docs/tutorials/getting-started/event-driven-architectures):
+
+- `adding a shopping item to a cart on an e-commerce website.` can be changed to `adding an item to a shopping cart on an e-commerce website` [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/getting-started/event-driven-architectures.md?plain=1#L27C155-L27C259)
+
+- [This](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/getting-started/event-driven-architectures.md?plain=1#L59C74-L59C130) can be changed from `You will even find _"message-based"_ and _"event-based"_` to `You will even find _"message-based"_ and _"event-based"_ being used instead of _"message-driven"_ and _"event-driven"_.`
+
+- Changing `_event-driven_` to `_"event-driven"_` [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/getting-started/event-driven-architectures.md?plain=1#L61C107-L61C123) to maintain consistency.
+
+- Can we add [Martin Fowler's wikipedia page](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)) [here](https://github.com/asyncapi/website/blob/81118d45b14b4676d1b63f7b033bb63eb7b92ad7/pages/docs/tutorials/getting-started/event-driven-architectures.md?plain=1#L63C41-L63C54) in-case someone is interested in getting information about him?
+
+
+=========================================================
+							|
+[📑 Docs]: suggestions on 'coming-from-openapi.md' file	|
+							|
+=========================================================
+
+I have some questions and suggestions to discuss that may improve [this doc](https://www.asyncapi.com/docs/tutorials/getting-started/coming-from-openapi):
+
+- In [this line](https://github.com/asyncapi/website/blob/8549ce7a9de9fa1b59d311c9082061826af9ef20/pages/docs/tutorials/getting-started/coming-from-openapi.md?plain=1#L10C186-L10C288), I propose we change `We wanted to have as much compatibility as possible between the two so users could reuse parts in both.` to `We wanted to have as much compatibility as possible between the two so that the users could reuse parts in both.`
+
+- Can [this](https://github.com/asyncapi/website/blob/8549ce7a9de9fa1b59d311c9082061826af9ef20/pages/docs/tutorials/getting-started/coming-from-openapi.md?plain=1#L12C103-L12C129) be written like this `Event-Driven Architectures`? Because I've seen it being used like this.
+- Can we add a redirection link to `Avro schema.` documentation [here](https://github.com/asyncapi/website/blob/8549ce7a9de9fa1b59d311c9082061826af9ef20/pages/docs/tutorials/getting-started/coming-from-openapi.md?plain=1#L21C116-L21C127)? If someone wants to understand what is `Avro schema`, they can read the docs. I'm guessing there is a documentation on this from AsyncAPI as I recall I've read the word `Avro` somewhere in docs before. 
