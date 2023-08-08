@@ -1,1 +1,4 @@
 yt-dlp -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" "PUT LINK HERE"
+
+
+yt-dlp -f "bv*[height<=720]+ba/b[height<=720]" -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" "LINK"
