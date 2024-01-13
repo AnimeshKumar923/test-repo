@@ -1,4 +1,6 @@
-- Express Vigil : Whack-a-face Quest with Facial Precision (1) (Sharaz Ul Haq(E13794))
+# Potential Candidates
+
+- Express Vigil : Whack-a-face Quest with Facial Precision (1) (Sharaz Ul Haq(E13794)) (Saumya already voted) (Hospital management system)
 
 - Student Management System (0) (Rupinder Kaur(E12697))
 
@@ -6,21 +8,26 @@
 
 - Weather Forecasting website (0) (Amandeep Kaur(E11813))
 
-- Social Networking Site (0) (Narinder Kaur(E12264))
-
 - Movie ticket booking (0) (Narinder Kaur(E12264))
-
-- Advanced Chatting Application (0) (Sartajvir Singh(E15199))	
-
-- Real Time Chat Application (WeChat) (0) (Vandna Rani(E15995))
 
 - ONLINE UNUSED MEDICINE DONATION SYSTEM (0) (Anupama Jamwal(E14665))
 
-- A review on cloud computing (Research/review paper) (0) (Data mere paas hai kuchh hadd tak...) (Ritu(E13280))
+- SmartSpends: An Intelligent Expense Tracker for Financial Wellness (0) (Gagan Mala(E12323))
+
+## A bit difficult projects
+
+- Social Networking Site (0) (Narinder Kaur(E12264))
+
+- Real Time Chat Application (WeChat) (0) (Vandna Rani(E15995))
+
+- Advanced Chatting Application (0) (Sartajvir Singh(E15199))	
 
 - Registration form using MERN (2) (Sharaz Ul Haq(E13794))
 
-- SmartSpends: An Intelligent Expense Tracker for Financial Wellness (0) (Gagan Mala(E12323))
+
+# Last Option (if nothing works)
+
+- A review on cloud computing (Research/review paper) (0) (Data mere paas hai kuchh hadd tak...) (Ritu(E13280))
 
 - Web Scraping Using Beautiful Soup (1) (Manpreet Kaur(E12698))
 
