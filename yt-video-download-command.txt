@@ -1,3 +1,11 @@
-yt-dlp -f "bv*[height<=480]+ba/b[height<=480]" -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" "LINK"
+yt-dlp -f "bv*[height<=480]+ba/b[height<=480]" -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" "https://www.youtube.com/playlist?list="
 
-yt-dlp -f "bv*[height<=480]+ba/b[height<=480]" "LINK"
+yt-dlp -f "bv*[height<=480]+ba/b[height<=480]" "https://www.youtube.com/watch?v=" --embed-chapters
+
+
+Music Downloader
+
+
+yt-dlp -x --audio-format best --yes-playlist -o "%(playlist_title)s/%(title)s.%(ext)s" https://youtube.com/playlist?list=
+
+yt-dlp -x --audio-format best -o "%(title)s.%(ext)s" yt-link
