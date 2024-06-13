@@ -35,7 +35,7 @@ const GameForm = () => {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       ></textarea>
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
+      <button type="submit" className="bg-fuchsia-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
     </form>
   );
 };
