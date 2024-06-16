@@ -31,4 +31,4 @@ from
 
 remove lines from 217 to 221
 
-Then the file becomes valid
+Then the file becomes valid in the AsyncAPI Studio
