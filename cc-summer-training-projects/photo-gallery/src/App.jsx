@@ -17,8 +17,8 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-200 min-h-screen w-screen">
-      <header className="bg-blue-600 text-white text-center py-4">
+    <div className="bg-gradient-to-t from-lime-400 to-blue-500 min-h-screen w-screen">
+      <header className="bg-fuchsia-600 text-white text-center py-4">
         <h1 className="text-2xl font-bold">My Photo Gallery</h1>
       </header>
       <main className="p-4">

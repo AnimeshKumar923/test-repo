@@ -19,7 +19,7 @@ const UploadForm = ({ addPhoto }) => {
   return (
     <form onSubmit={handleSubmit} className="mb-4">
       <input type="file" onChange={handleFileChange} className="mb-2" />
-      <button type="submit" className="bg-blue-500 text-white py-1 px-4 rounded">Upload</button>
+      <button type="submit" className="bg-rose-400 text-white py-1 px-4 rounded">Upload</button>
     </form>
   );
 };
