@@ -36,8 +36,19 @@ Then the file becomes valid in the AsyncAPI Studio
 
 # how did I locally resolved error in Message-Example-Object.json?
 
-Added a placeholder for the example at line 429 in the base doc
+Added a placeholder of type array for the example at line 429 in the base doc
 
 ```json 
 "examples":[]
 ```
+
+# how did I locally resolved error in Message-Example-Object.json?
+
+Added a placeholder of type array for the example at line 231 in the base doc
+
+```json 
+"traits":[]
+```
+
+
+
