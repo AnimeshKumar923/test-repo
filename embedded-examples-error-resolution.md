@@ -42,7 +42,7 @@ Added a placeholder of type array for the example at line 429 in the base doc
 "examples":[]
 ```
 
-# how did I locally resolved error in Message-Example-Object.json?
+# how did I locally resolved error in Operation-Traits-Object.json?
 
 Added a placeholder of type array for the example at line 231 in the base doc
 
@@ -50,5 +50,7 @@ Added a placeholder of type array for the example at line 231 in the base doc
 "traits":[]
 ```
 
+# problems in Message-Object, Components-Object
 
+reference to some non-existent external example file
 
