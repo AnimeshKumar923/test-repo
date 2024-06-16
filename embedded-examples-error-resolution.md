@@ -59,7 +59,7 @@ reference to some non-existent external example file
 
 ---
 
-# Problems with 
+# Problems with Security-Scheme-OAuth-Flow-Object.json
 
 
 ```bash
