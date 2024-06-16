@@ -32,3 +32,12 @@ from
 remove lines from 217 to 221
 
 Then the file becomes valid in the AsyncAPI Studio
+
+
+# how did I locally resolved error in Message-Example-Object.json?
+
+Added a placeholder for the example at line 429 in the base doc
+
+```json 
+"examples":[]
+```
