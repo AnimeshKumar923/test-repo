@@ -57,3 +57,28 @@ applied it via this [commit](https://github.com/asyncapi/spec/pull/1059/commits/
 
 reference to some non-existent external example file
 
+---
+
+# Problems with 
+
+
+```bash
+File /home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/Security-Scheme-OAuth-Flow-Object.json and/or referenced documents have governance issues.
+Errors 
+/home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/Security-Scheme-OAuth-Flow-Object.json
+Error:  596:15  error  asyncapi-document-resolved  "0" property must have required property "in"                    components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "0" property must not be valid                                   components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "0" property must have required property "scheme"                components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "0" property must have required property "name"                  components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "0" property must have required property "openIdConnectUrl"      components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "oauth" property must have required property "in"                components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "oauth" property must not be valid                               components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "oauth" property must have required property "scheme"            components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "oauth" property must have required property "name"              components.securitySchemes.oauth
+Error:  596:15  error  asyncapi-document-resolved  "oauth" property must have required property "openIdConnectUrl"  components.securitySchemes.oauth
+Error:  599:17  error  asyncapi-document-resolved  Property "flows" is not expected to be here                      components.securitySchemes.oauth.flows
+Error:  600:31  error  asyncapi-document-resolved  "clientCredentials" property must not be valid                   components.securitySchemes.oauth.flows.clientCredentials
+Error:  610:18  error  asyncapi-document-resolved  Property "scopes" is not expected to be here                     components.securitySchemes.oauth.scopes
+
+✖ 13 problems (13 errors, 0 warnings, 0 infos, 0 hints)
+```
