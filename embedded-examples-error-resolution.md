@@ -62,7 +62,7 @@ reference to some non-existent external example file
 # Problems with 
 
 
-```bash
+```console
 File /home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/Security-Scheme-OAuth-Flow-Object.json and/or referenced documents have governance issues.
 Errors 
 /home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/Security-Scheme-OAuth-Flow-Object.json
