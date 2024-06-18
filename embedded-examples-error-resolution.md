@@ -1,4 +1,4 @@
-# how did I locally resolved error in Operation-Object.json?
+# how did I locally resolved error in [Operation-Object.json](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Operation-Object.json)?
 
 ## 1st change
 change line 219 in the document itself from 
@@ -35,7 +35,7 @@ Then the file becomes valid in the AsyncAPI Studio
 
 Try it [here](https://tinyurl.com/operation-object)
 
-# how did I locally resolved error in Message-Example-Object.json?
+# how did I locally resolved error in [Message-Example-Object.json](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Message-Example-Object.json)?
 
 Added a placeholder of type array for the example at line 429 in the base doc
 
@@ -44,7 +44,7 @@ Added a placeholder of type array for the example at line 429 in the base doc
 ```
 applied it via this [commit](https://github.com/asyncapi/spec/pull/1059/commits/6f18cbc36767bbce74220947b9cd9fc570c21b62)
 
-# how did I locally resolved error in Operation-Traits-Object.json?
+# how did I locally resolved error in [Operation-Traits-Object.json](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Operation-Traits-Object.json)?
 
 Added a placeholder of type array for the example at line 231 in the base doc
 
@@ -53,13 +53,13 @@ Added a placeholder of type array for the example at line 231 in the base doc
 ```
 applied it via this [commit](https://github.com/asyncapi/spec/pull/1059/commits/6f18cbc36767bbce74220947b9cd9fc570c21b62)
 
-# problems in Message-Object, Components-Object
+# problems in [Message-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Message-Object.json), [Components-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Components-Object.json)
 
 reference to some non-existent external example file
 
 ---
 
-# Problems with Security-Scheme-OAuth-Flow-Object.json
+# Problems with [Security-Scheme-OAuth-Flow-Object.json](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Security-Scheme-OAuth-Flow-Object.json)
 
 
 ```bash
