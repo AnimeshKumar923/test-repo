@@ -53,9 +53,24 @@ Added a placeholder of type array for the example at line 231 in the base doc
 ```
 applied it via this [commit](https://github.com/asyncapi/spec/pull/1059/commits/6f18cbc36767bbce74220947b9cd9fc570c21b62)
 
-# problems in [Message-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Message-Object.json), [Components-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Components-Object.json)
+# problems in [Message-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Message-Object.json)
 
-reference to some non-existent external example file
+```bash
+
+Error:  481:21  error  invalid-ref  ENOENT: no such file or directory, open '/home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/path/to/user-create.avsc'  components.messages.userSignedUp.payload.schema.$ref
+
+```
+
+# problems in [Components-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Components-Object.json)
+
+```bash
+Error:  248:21  error  asyncapi-document-resolved  "AvroExample" property must match "then" schema                                                                                                   components.schemas.AvroExample
+Error:  250:18  error  asyncapi-document-resolved  "schema" property must match exactly one schema in oneOf                                                                                          components.schemas.AvroExample.schema
+Error:  264:19  error  invalid-ref                 ENOENT: no such file or directory, open '/home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/path/to/user-create.avsc'  components.schemas.AvroExample.schema.$ref
+
+```
+
+as far as I understand, it's referencing to some non-existent external example file
 
 ---
 
