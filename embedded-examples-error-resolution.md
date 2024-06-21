@@ -74,7 +74,7 @@ as far as I understand, it's referencing to some non-existent external example f
 
 ---
 
-# Problems with [Security-Scheme-OAuth-Flow-Object.json](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Security-Scheme-OAuth-Flow-Object.json)
+# Problems with [Security-Scheme-OAuth-Flow-Object.json](https://github.com/AnimeshKumar923/asyncapi-spec/blob/254354385f0cd28bd73eaaa86a9a91adc958b13f/scripts/validation/embed-logs/Security%20Scheme%20OAuth%20Flow%20Object-json-format.json)
 
 
 ```bash
