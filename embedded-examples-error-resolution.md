@@ -97,3 +97,17 @@ Error:  610:18  error  asyncapi-document-resolved  Property "scopes" is not expe
 
 ✖ 13 problems (13 errors, 0 warnings, 0 infos, 0 hints)
 ```
+
+## Solution for this error
+For the resolution, what I found out from my observation is that if we remove this line:
+
+```json
+"authorizationUrl": "https://example.com/api/oauth/dialog",
+```
+from the examples in the spec, the files become valid.
+
+and we remove the same line from the yaml file as well.
+
+I tried removing this line from the invalid document in the Studio validator and the file became valid
+
+Maybe I'm wrong and we need to modify something else? I don't know as of now...
