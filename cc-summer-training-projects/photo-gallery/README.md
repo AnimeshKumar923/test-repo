@@ -112,7 +112,7 @@ npm run dev
 Open your browser and navigate to http://localhost:3000 to see your photo gallery application in action
 
 
-# Video Link :point_down:
+# Video and Report link :point_down:
 
-[VIDEO LINK]()
-[PROJECT REPORT]()
+- [VIDEO LINK]()
+- [PROJECT REPORT](https://drive.google.com/file/d/1qeLEC-addLXGnC0FQGogoBTEMxYeSzAE/view?usp=sharing)
