@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import Upload from './components/Upload';
 import Gallery from './components/Gallery';
+import './styles.css'; // Import the CSS file
 
 function App() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetch('/api/photos')
+    fetch('http://localhost:5000/api/photos')
       .then((res) => res.json())
       .then((data) => setPhotos(data));
   }, []);
@@ -15,7 +16,7 @@ function App() {
     const formData = new FormData();
     formData.append('photo', file);
 
-    fetch('/api/upload', {
+    fetch('http://localhost:5000/api/upload', {
       method: 'POST',
       body: formData,
     })
@@ -24,7 +25,7 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    fetch(`/api/photos/${id}`, {
+    fetch(`http://localhost:5000/api/photos/${id}`, {
       method: 'DELETE',
     }).then(() => {
       setPhotos(photos.filter((photo) => photo.id !== id));
@@ -32,8 +33,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen w-screen bg-gray-100 flex flex-col items-center">
-      <h1 className="text-3xl font-bold mt-6 bg-green-500">Photo Gallery</h1>
+    <div className="app">
+      <h1>Photo Gallery</h1>
       <Upload onUpload={handleUpload} />
       <Gallery photos={photos} onDelete={handleDelete} />
     </div>
