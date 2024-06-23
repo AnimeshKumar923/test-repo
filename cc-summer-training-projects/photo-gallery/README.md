@@ -84,3 +84,8 @@ Upload Photos:
 Delete Photos:
 - Use the delete button on each photo to remove it.
 - Verify that photos are removed from both the UI and the backend.
+
+# Video and Report link :point_down:
+
+- [VIDEO LINK]()
+- [PROJECT REPORT](https://drive.google.com/file/d/1qeLEC-addLXGnC0FQGogoBTEMxYeSzAE/view?usp=sharing)
