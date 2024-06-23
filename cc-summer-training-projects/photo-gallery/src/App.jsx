@@ -7,33 +7,48 @@ function App() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/photos')
-      .then((res) => res.json())
-      .then((data) => setPhotos(data));
+    fetchPhotos();
   }, []);
 
-  const handleUpload = (file) => {
+  const fetchPhotos = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/api/photos');
+      const data = await response.json();
+      setPhotos(data);
+    } catch (error) {
+      console.error('Error fetching photos:', error);
+    }
+  };
+
+  const handleUpload = async (file) => {
     const formData = new FormData();
     formData.append('photo', file);
 
-    fetch('http://localhost:5000/api/upload', {
-      method: 'POST',
-      body: formData,
-    })
-      .then((res) => res.json())
-      .then((newPhoto) => setPhotos([...photos, newPhoto]));
+    try {
+      const response = await fetch('http://localhost:5000/api/upload', {
+        method: 'POST',
+        body: formData,
+      });
+      const newPhoto = await response.json();
+      setPhotos((prevPhotos) => [...prevPhotos, newPhoto]);
+    } catch (error) {
+      console.error('Error uploading photo:', error);
+    }
   };
 
-  const handleDelete = (id) => {
-    fetch(`http://localhost:5000/api/photos/${id}`, {
-      method: 'DELETE',
-    }).then(() => {
-      setPhotos(photos.filter((photo) => photo.id !== id));
-    });
+  const handleDelete = async (id) => {
+    try {
+      await fetch(`http://localhost:5000/api/photos/${id}`, {
+        method: 'DELETE',
+      });
+      setPhotos((prevPhotos) => prevPhotos.filter((photo) => photo.id !== id));
+    } catch (error) {
+      console.error('Error deleting photo:', error);
+    }
   };
 
   return (
-    <div className="app">
+    <div className="app-container">
       <h1>Photo Gallery</h1>
       <Upload onUpload={handleUpload} />
       <Gallery photos={photos} onDelete={handleDelete} />

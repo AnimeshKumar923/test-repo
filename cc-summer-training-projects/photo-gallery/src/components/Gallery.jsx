@@ -1,13 +1,16 @@
-import Photo from './Photo';
+import React from 'react';
 
-function Gallery({ photos, onDelete }) {
+const Gallery = ({ photos, onDelete }) => {
   return (
     <div className="gallery">
       {photos.map((photo) => (
-        <Photo key={photo.id} photo={photo} onDelete={onDelete} />
+        <div key={photo.id} className="photo-item">
+          <img src={`http://localhost:5000/${photo.url}`} alt="Uploaded" />
+          <button onClick={() => onDelete(photo.id)}>Delete</button>
+        </div>
       ))}
     </div>
   );
-}
+};
 
 export default Gallery;

@@ -17,7 +17,7 @@ h1 {
   color: black;
   display: flex;
   justify-content: center;
-  background-color:;
+  /* background-color:; */
 }
 
 form {
@@ -85,10 +85,22 @@ button:hover {
   background-color: #c82333;
 }
 
-.app{
+.app-container{
   display: flex;
   flex-direction: column;
   /* align-content: center; */
   /* justify-content: center; */
   width: 90vw;
+  background-color:aquamarine;
+}
+
+.upload{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:cadetblue;
+}
+
+.upload-btn{
+  margin-bottom: 15px;
 }

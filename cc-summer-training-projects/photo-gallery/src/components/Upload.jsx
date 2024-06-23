@@ -1,22 +1,24 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-function Upload({ onUpload }) {
+const Upload = ({ onUpload }) => {
   const [file, setFile] = useState(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const handleUpload = () => {
     if (file) {
       onUpload(file);
-      setFile(null);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-      <button type="submit">Upload</button>
-    </form>
+    <div class='upload'>
+      <input type="file" onChange={handleFileChange} />
+      <button class='upload-btn' onClick={handleUpload}>Upload</button>
+    </div>
   );
-}
+};
 
 export default Upload;
