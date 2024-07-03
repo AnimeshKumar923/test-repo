@@ -122,4 +122,4 @@ I've tried this in the Studio validator:
 
 - For the `Message Object`, if we remove [this portion](https://github.com/AnimeshKumar923/asyncapi-spec/blob/3ffdb58ce45a7619037be7c77642eb62c33a10a4/scripts/validation/embed-logs/Message%20Object-json-format.json#L479C75-L482C12), the file becomes valid.
 
-- For the Components Object, if we remove [this portion](https://github.com/AnimeshKumar923/asyncapi-spec/blob/3ffdb58ce45a7619037be7c77642eb62c33a10a4/scripts/validation/embed-logs/Components%20Object-json-format.json#L263C12-L264C57), the file becomes valid.
+- For the `Components Object`, if we remove [this portion](https://github.com/AnimeshKumar923/asyncapi-spec/blob/3ffdb58ce45a7619037be7c77642eb62c33a10a4/scripts/validation/embed-logs/Components%20Object-json-format.json#L263C12-L264C57), the file becomes valid.
