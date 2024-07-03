@@ -53,25 +53,6 @@ Added a placeholder of type array for the example at line 231 in the base doc
 ```
 applied it via this [commit](https://github.com/asyncapi/spec/pull/1059/commits/6f18cbc36767bbce74220947b9cd9fc570c21b62)
 
-# problems in [Message-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Message-Object.json)
-
-```bash
-
-Error:  481:21  error  invalid-ref  ENOENT: no such file or directory, open '/home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/path/to/user-create.avsc'  components.messages.userSignedUp.payload.schema.$ref
-
-```
-
-# problems in [Components-Object](https://github.com/asyncapi/spec/blob/ced626f6f6abf80e128216793a1bdc656c36c059/scripts/validation/updated-docs/Components-Object.json)
-
-```bash
-Error:  248:21  error  asyncapi-document-resolved  "AvroExample" property must match "then" schema                                                                                                   components.schemas.AvroExample
-Error:  250:18  error  asyncapi-document-resolved  "schema" property must match exactly one schema in oneOf                                                                                          components.schemas.AvroExample.schema
-Error:  264:19  error  invalid-ref                 ENOENT: no such file or directory, open '/home/runner/work/asyncapi-spec/asyncapi-spec/scripts/validation/updated-docs/path/to/user-create.avsc'  components.schemas.AvroExample.schema.$ref
-
-```
-
-as far as I understand, it's referencing to some non-existent external example file
-
 ---
 
 # Problems with [Security-Scheme-OAuth-Flow-Object.json](https://github.com/AnimeshKumar923/asyncapi-spec/blob/254354385f0cd28bd73eaaa86a9a91adc958b13f/scripts/validation/embed-logs/Security%20Scheme%20OAuth%20Flow%20Object-json-format.json)
@@ -118,3 +99,27 @@ and we remove the same line from the yaml file as well.
 I tried removing this line from the invalid document in the Studio validator and the file became valid
 
 Maybe I'm wrong and we need to modify something else? I don't know as of now...
+
+---
+
+# Problems in [Message-Object](https://github.com/AnimeshKumar923/asyncapi-spec/blob/3ffdb58ce45a7619037be7c77642eb62c33a10a4/scripts/validation/embed-logs/Message%20Object-json-format.json)
+
+```bash
+Warning in Message Object-json-format: ENOENT: no such file or directory, open 'path/to/user-create.avsc'
+```
+
+# Problems in [Components-Object](https://github.com/AnimeshKumar923/asyncapi-spec/blob/3ffdb58ce45a7619037be7c77642eb62c33a10a4/scripts/validation/embed-logs/Components%20Object-json-format.json)
+
+```bash
+Warning in Components Object-json-format: "AvroExample" property must match "then" schema
+Warning in Components Object-json-format: "schema" property must match exactly one schema in oneOf
+Warning in Components Object-json-format: ENOENT: no such file or directory, open 'path/to/user-create.avsc'
+```
+
+As far as I understand, it's referencing to some non-existent external example file.
+
+I've tried this in the Studio validator:
+
+- For the `Message Object`, if we remove [this portion](https://github.com/AnimeshKumar923/asyncapi-spec/blob/3ffdb58ce45a7619037be7c77642eb62c33a10a4/scripts/validation/embed-logs/Message%20Object-json-format.json#L479C75-L482C12), the file becomes valid.
+
+- For the Components Object, if we remove [this portion](https://github.com/AnimeshKumar923/asyncapi-spec/blob/3ffdb58ce45a7619037be7c77642eb62c33a10a4/scripts/validation/embed-logs/Components%20Object-json-format.json#L263C12-L264C57), the file becomes valid.
