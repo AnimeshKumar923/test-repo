@@ -1,0 +1,29 @@
+An AsyncAPI document is a file through which you can define and describe the various components of a specific Event-Driven API. It is used to define different components of the API (which are slightly distinct from the REST API) to facilitate the asynchronous exchange of messages. The file format of the document must be either JSON or YAML, but only the YAML subset that is compatible with JSON features is allowed.
+
+AsyncAPI (the document thing) defines stuff for your Event-Driven—super important, super fancy—API. This document later gets turned into readable code stuff (not by magic, by machines) so it can be used for generating more docs, for validating all the incoming or outgoing or floating around somewhere messages sent by your Example_App, or possibly to apply some "policies" (whatever that means) to the events in the API before they go to, like, a broker? And don't ask about brokers; it's not that kind of broker, nothing to do with Wall Street.
+
+Now, you have the ultimate in machine-readable API docs! Machines everywhere (robots? who knows?) can parse this stuff like it's no big deal. What will they do with it? Endless things. Or nothing at all.
+
+Confused yet, or is that only me?
+
+
+
+
+
+
+
+
+
+
+
+
+I'm working for various repositories under the AsyncAPI Organization.
+
+
+
+I've worked and reviewed some of the docs which were work-in-progress before the release of the AsyncAPI v3.0.0. I've observed the workflow and process through which a document goes through in the AsyncAPI community.
+
+I'm writing a blog currently (WIP) which describes the workflow which I developed a few months back in the Spec repo.
+
+I think this would be great opportunity to get more experience by getting my hands dirty in the field of technical writing.
+Thank you for your time to review my application! Have a great day ahead!
